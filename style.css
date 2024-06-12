@@ -1,0 +1,254 @@
+{
+    outline:2px solid red;
+}
+html{
+    height: 100%;
+    background: linear-gradient(45deg,#00BFFF, violet);
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    height: 675px;
+    flex-direction: column;
+    background: none;
+}
+header{
+    background-color: #333333;
+    width: 100vw;
+    height: 58px;
+    position: relative;
+    top: -10px;
+    margin-bottom: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial;
+    font-size: 22px;
+    font-weight: bold;
+    background: linear-gradient(45deg,cyan,#00BFFF, cyan,#00BFFF, cyan);
+    color: black;
+    outline: 1px solid black;
+}
+.calendar{
+    height: 80%;
+    width: 590px;
+    border-bottom: 1px solid dimgray;
+    padding-bottom: 35px;
+    border-radius: 5px;
+}
+.header{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: "Century Schoolbook";
+    width: 100%;
+    height: 65px;
+    border-top: 1px solid dimgray;
+    border-bottom: 1px solid dimgray;
+    background: linear-gradient(45deg, white, Floralwhite,white);
+    border-radius: 1vw;
+}
+.mainheader{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    font-size: 15px;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+#prev, #next{
+    border-radius: 8px;
+    font-weight: bold;
+    border: none;
+    font-size: 20px;
+    background-color: white;
+    user-select: none;
+}
+#prev:hover, #next:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+#prev{
+    position: relative;
+    left: 15px;
+    height: 30px;
+}
+#next{
+    position: relative;
+    right: 15px;
+    height: 30px;
+}
+#changeYear{
+    position: relative;
+    right: -6%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+    display: none;
+}
+.header:hover #changeYear{
+    display: flex;
+}
+.currentMonth{
+    display: flex;
+    justify-content: center;
+}
+#month-year{
+    font-size: 20px;
+}
+.Dates{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 90%;
+}
+.ROW1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    color: #A91B0D;
+}
+.ROW{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.COLUMN1{
+    width: 30px;
+    height: 25px;
+    font-size: 22px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    font-family: Calibri;
+}
+.COLUMN{
+    width: 50px;
+    height: 45px;
+    border-radius: 20px;
+    border: none;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: rgba(250, 250, 250, 0.5);
+}
+.COLUMN:hover{
+    cursor: pointer;
+    background-color: rgba(250, 250, 250, 0.5);
+
+}
+#month-year:hover, .ROW1:hover{
+    cursor: default;
+}
+#todayTag{
+    background-color: floralwhite;
+    color: blue;
+    font-family: Calibri;
+    font-weight: bold;
+    padding: 11px;
+    border-radius: 15px;
+    width: 5%;
+    display: flex;
+    justify-content: center;
+    margin-right: 10%;
+    opacity: .6;
+}
+#Date{
+    background-color: floralwhite;
+    color: blue;
+    font-family: Calibri;
+    font-weight: bold;
+    padding: 11px;
+    border-radius: 15px;
+    opacity: .6;
+}
+.todayTag:hover{
+    cursor: pointer;
+    transition: 100ms;
+    transform: scale(0.96);
+}
+@media(max-width: 1350px){
+    .calendar{
+        width: 600px;
+    }
+    .COLUMN{
+        height: 46px;
+        font-size: 18px;
+    }
+}
+@media(max-width: 750px){
+    header{
+        position: absolute;
+        top: 0px;
+    }
+    .mainheader{
+        margin-top: 65px;
+        margin-bottom: 8px;
+    }
+    .calendar{
+        width: 420px;
+    }
+    .COLUMN{
+        width: 46px;
+        height: 40px;
+        font-size: 17px;
+        border-radius: 17px;
+    }
+    .COLUMN1{
+        font-size: 21px;
+    }
+    #todayTag, #Date{
+        display: flex;
+        justify-content: center;
+        font-size: 14px;
+    }
+    #todayTag{
+        width: 8%
+    }
+}
+@media(max-width: 450px){
+    body{
+        height: 635px;
+    }
+    header{
+        background: linear-gradient(45deg,#00BFFF,cyan,#00BFFF);
+    }
+    .calendar{
+        width: 350px;
+        height: 430px;
+    }
+    .mainheader{
+        margin-top: 40px;
+        margin-bottom: 8px;
+    }
+    .header{
+        border-radius: 2vw;
+        background-color: floralwhite;
+        display: flex;
+        align-items: center;
+    }
+    #month-year{
+        font-size: 18px;
+    }
+    .COLUMN{
+        width: 38px;
+        height: 36px;
+        font-size: 13px;
+        border-radius: 16px;
+    }
+    .COLUMN1{
+        font-size: 14px;
+    }
+    #todayTag, #Date{
+        display: flex;
+        justify-content: center;
+        font-size: 12px;
+    }
+    #todayTag{
+        width: 10%
+    }
+}

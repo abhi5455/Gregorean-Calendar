@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gregorian-Calendar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>Gregorian Calendar</header>
+<div class="mainheader">
+    <div class="todayTag" id="todayTag">TODAY</div>
+    <div class="DateUpdate" id="Date">SEPTEMBER 30, 2024</div>
+</div>
+<div class="calendar">
+    <div class="header">
+        <div>
+            <button id="prev">
+                <img src="leftArrow.png" alt="back" style="width: 12px;"/>
+            </button>
+        </div>
+        <div id="changeYear">
+            <button style="background-color: transparent; border: none" onclick="changeYearsClick('up')">
+                <img src="upArrow.png" style="width:8px; position: relative; bottom: -5px;">
+            </button>
+            <button style="background-color: transparent; border: none" onclick="changeYearsClick('down')">
+                <img src="downArrow.png" style="width:8px; position: relative; top: -5px;">
+            </button>
+        </div>
+        <div class="currentMonth">
+            <h2 id="month-year" style="margin-right: 5px; margin-left: 5px;">2020 JANUARY</h2>
+        </div>
+        <div>
+            <button id="next">
+                <img src="rightArrow.png" alt="front" style="width: 12px;"/>
+            </button>
+        </div>
+    </div>
+    <div class="Dates">
+        <div class="ROW1">
+            <div class="COLUMN1">
+                SUN
+            </div>
+            <div class="COLUMN1">
+                MON
+            </div>
+            <div class="COLUMN1">
+                TUE
+            </div>
+            <div class="COLUMN1">
+                WED
+            </div>
+            <div class="COLUMN1">
+                THU
+            </div>
+            <div class="COLUMN1">
+                FRI
+            </div>
+            <div class="COLUMN1">
+                SAT
+            </div>
+        </div>
+        <div class="ROW">
+            <button class="COLUMN" id="1">
+
+            </button>
+            <button class="COLUMN" id="2">
+
+            </button>
+            <button class="COLUMN" id="3">
+
+            </button>
+            <button class="COLUMN" id="4">
+
+            </button>
+            <button class="COLUMN" id="5">
+
+            </button>
+            <button class="COLUMN" id="6">
+
+            </button>
+            <button class="COLUMN" id="7">
+
+            </button>
+        </div>
+        <div class="ROW">
+            <button class="COLUMN" id="8">
+
+            </button>
+            <button class="COLUMN" id="9">
+
+            </button>
+            <button class="COLUMN" id="10">
+
+            </button>
+            <button class="COLUMN" id="11">
+
+            </button>
+            <button class="COLUMN" id="12">
+
+            </button>
+            <button class="COLUMN" id="13">
+
+            </button>
+            <button class="COLUMN" id="14">
+
+            </button>
+        </div>
+        <div class="ROW">
+            <button class="COLUMN" id="15">
+
+            </button>
+            <button class="COLUMN" id="16">
+
+            </button>
+            <button class="COLUMN" id="17">
+
+            </button>
+            <button class="COLUMN" id="18">
+
+            </button>
+            <button class="COLUMN" id="19">
+
+            </button>
+            <button class="COLUMN" id="20">
+
+            </button>
+            <button class="COLUMN" id="21">
+
+            </button>
+        </div>
+        <div class="ROW">
+            <button class="COLUMN" id="22">
+
+            </button>
+            <button class="COLUMN" id="23">
+
+            </button>
+            <button class="COLUMN" id="24">
+
+            </button>
+            <button class="COLUMN" id="25">
+
+            </button>
+            <button class="COLUMN" id="26">
+
+            </button>
+            <button class="COLUMN" id="27">
+
+            </button>
+            <button class="COLUMN" id="28">
+
+            </button>
+        </div>
+        <div class="ROW">
+            <button class="COLUMN" id="29">
+
+            </button>
+            <button class="COLUMN" id="30">
+
+            </button>
+            <button class="COLUMN" id="31">
+
+            </button>
+            <button class="COLUMN" id="32">
+
+            </button>
+            <button class="COLUMN" id="33">
+
+            </button>
+            <button class="COLUMN" id="34">
+
+            </button>
+            <button class="COLUMN" id="35">
+
+            </button>
+        </div>
+        <div class="ROW">
+            <button class="COLUMN" id="36">
+
+            </button>
+            <button class="COLUMN" id="37">
+
+            </button>
+            <button class="COLUMN" id="38">
+
+            </button>
+            <button class="COLUMN" id="39">
+
+            </button>
+            <button class="COLUMN" id="40">
+
+            </button>
+            <button class="COLUMN" id="41">
+
+            </button>
+            <button class="COLUMN" id="42">
+            </button>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
