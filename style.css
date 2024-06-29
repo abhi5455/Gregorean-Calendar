@@ -108,7 +108,7 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    color: #A91B0D;
+    color: darkred;
 }
 .ROW{
     display: flex;
