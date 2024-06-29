@@ -3,7 +3,6 @@
 }
 html{
     height: 100%;
-    background: linear-gradient(45deg,#00BFFF, violet);
 }
 body{
     display: flex;
@@ -12,10 +11,11 @@ body{
     user-select: none;
     height: 675px;
     flex-direction: column;
-    background: none;
+    background: rgb(2,0,36);
+    background: linear-gradient(45deg, rgba(2,0,36,1), rgba(0,212,255,1));
 }
 header{
-    background-color: #333333;
+    background-color: rgb(2,0,36,.1);
     width: 100vw;
     height: 58px;
     position: relative;
@@ -27,14 +27,11 @@ header{
     font-family: Arial;
     font-size: 22px;
     font-weight: bold;
-    background: linear-gradient(45deg,cyan,#00BFFF, cyan,#00BFFF, cyan);
-    color: black;
-    outline: 1px solid black;
 }
 .calendar{
     height: 80%;
     width: 590px;
-    border-bottom: 1px solid dimgray;
+    border-bottom: 1px solid rgb(255,255,255,.4);
     padding-bottom: 35px;
     border-radius: 5px;
 }
@@ -47,9 +44,9 @@ header{
     font-family: "Century Schoolbook";
     width: 100%;
     height: 65px;
-    border-top: 1px solid dimgray;
-    border-bottom: 1px solid dimgray;
+    border: 1px solid dimgray;
     background: linear-gradient(45deg, white, Floralwhite,white);
+    opacity: .88;
     border-radius: 1vw;
 }
 .mainheader{
@@ -214,12 +211,10 @@ header{
     body{
         height: 635px;
     }
-    header{
-        background: linear-gradient(45deg,#00BFFF,cyan,#00BFFF);
-    }
     .calendar{
         width: 350px;
         height: 430px;
+        border-bottom: 1px solid rgb(255,255,255,.4);
     }
     .mainheader{
         margin-top: 40px;
